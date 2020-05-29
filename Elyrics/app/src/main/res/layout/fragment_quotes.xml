@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".QuotesFragment"
+    android:padding="8dp"
+ android:id="@+id/quotebg"
+    android:background="@drawable/grad2"
+    >
+
+    <com.daasuu.bl.BubbleLayout
+        android:layout_width="match_parent"
+        android:layout_height="350dp"
+        android:layout_marginTop="12dp"
+        android:padding="8dp"
+        app:bl_arrowDirection="bottom_center"
+        app:bl_arrowHeight="38dp"
+        app:bl_arrowPosition="16dp"
+        app:bl_arrowWidth="38dp"
+        app:bl_cornersRadius="26dp"
+        app:bl_strokeWidth="2dp"
+
+        app:bl_strokeColor="@android:color/black"
+        android:id="@+id/bubbleQuote"
+android:elevation="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.000"
+        >
+
+<LinearLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    >
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+android:layout_gravity="center"
+        style="@android:style/TextAppearance.DeviceDefault.Large"
+        android:gravity="center"
+        android:textStyle="bold"
+android:clickable="true"
+        android:text="Words of Wisdom"
+        android:textSize="20sp"
+        />
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Author"
+            android:textSize="12sp"
+            android:id="@+id/author"
+            android:layout_margin="8dp"
+            android:textColor="@android:color/darker_gray"
+
+            />
+</LinearLayout>
+
+    </com.daasuu.bl.BubbleLayout>
+
+
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@+id/random"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bubbleQuote"
+        app:lottie_autoPlay="true"
+        app:lottie_speed="1"
+        app:lottie_rawRes="@raw/ninja"
+        app:lottie_loop="true" />
+
+
+    <Button
+        android:alpha=".7"
+        android:id="@+id/random"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Generate Random Quotes"
+
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bubble"
+
+        />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

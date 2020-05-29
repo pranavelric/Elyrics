@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_margin="5dp"
+    android:elevation="10dp"
+    android:padding="10dp"
+    app:cardCornerRadius="10dp"
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/bubble"
+    >
+<LinearLayout
+    android:clickable="true"
+    android:focusable="true"
+    android:background="@drawable/bubble"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cardLayout"
+    android:orientation="horizontal"
+    android:weightSum="6"
+
+    >
+<ImageView
+    android:layout_width="50dp"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:src="@drawable/music"
+    />
+    <LinearLayout
+
+        android:gravity="center"
+android:layout_gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Title"
+            android:textColor="@android:color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+        <TextView
+            android:id="@+id/artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Singer:"
+            android:textColor="@android:color/black"
+            android:textSize="12sp"
+            android:textStyle="normal" />
+    </LinearLayout>
+</LinearLayout>
+</androidx.cardview.widget.CardView>
+
+

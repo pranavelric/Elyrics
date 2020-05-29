@@ -1,0 +1,2 @@
+rootProject.name='Elyrics'
+include ':app'
