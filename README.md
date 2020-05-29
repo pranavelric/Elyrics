@@ -42,4 +42,7 @@ Elryics is written in Java and runs on phones and tablets equipped with Android 
 
  # Download
 
- 
+  <a  href="https://www.amazon.com/Pranav-choudhary-Elyrics/dp/B0897PZ5LG/ref=sr_1_1?dchild=1&keywords=Elyrics&qid=1590765502&rnid=2941120011&s=mobile-apps&sr=1-1" title= "Elyrics">
+  <img alt="Elyrics" width="100" height="100" src="screenshots/musi.png">
+
+</a>
